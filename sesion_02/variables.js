@@ -1,5 +1,14 @@
+//'use strict';
+//
+//if (true) {
+//    colorVerde = 'Verde';
+//}
+//
+//console.log('Color Verde', colorVerde)
+
+
 // Global Scope
-var colorVerde = 'Verde'; 
+var colorVerde = 'Verde';
 
 function getColor () {
     return colorVerde;
@@ -15,11 +24,11 @@ function getColorNow () {
 
 // Block Scope ES6
 if (true) {
-    var colorAmarillo = 'Anaranjado';
-    console.log('El color desde BS:', colorAmarillo)
+    const colorVerde = 'Anaranjado';
+    console.log('El color desde BS:', colorVerde)
 }
 
-// El BS de 'var' sobrescribe el valor en la variable con GS, 
+// El BS de 'var' sobrescribe el valor en la variable con GS,
 // pero con 'const' el alcance de la variable es solo dentro de '{}'
 console.log('El color desde GS II: ', colorVerde)
 
